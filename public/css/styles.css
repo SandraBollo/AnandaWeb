@@ -1,0 +1,39 @@
+/* //////////////Forms/////////////////////// */
+.colorGris{
+  color:#757575;
+
+}
+.tamaño{
+  font-size: 18px;
+}
+.Form{
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 5%;
+}
+.nav{
+background-color: #DD7FB8;
+padding-bottom: 0%;
+
+}
+
+/* ////////////////////////////////////////////// */
+.header{
+ background-size: cover;
+ width: 100%;
+ height:70vh;
+ background-image: url("https://images.unsplash.com/photo-1496499354870-877088652a58?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d597ae6b3403717f67c9e271f824c36e&auto=format&fit=crop&w=667&q=80");
+ background-size: cover;
+ background-position:  center center;
+ background-repeat: no-repeat;
+ text-align: center;
+}
+header{
+  width: 100%;
+  height: 50vh;
+  padding:75px;
+  color: #FFF;
+  text-shadow: 1px 1px 1px #333;
+
+
+}
