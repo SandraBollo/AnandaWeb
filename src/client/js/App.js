@@ -20,14 +20,16 @@ const NoMatch404 = () => {
   return <h2 style={styleObj}>No Match - 404</h2>
 }
 
-import Nav from '../../component/nav.js';
+import Nav from './component/nav.js';
 // import Footer from './component/footer.js';
 //////////////componentes/////////////////
 // import About from './component/about.js';
-// import Allproducts from './component/all-products.js';
+import Producto from './component/product.js';
 // import Category from './component/category.js';
-import Home from '../../component/home.js';
-import Forms from '../../component/Form.js';
+import Home from './component/home.js';
+import Forms from './component/Form.js';
+import RegistroProducto from './component/registro-producto.js';
+
 // import Terms from './component/terms.js';
 // import Header from './component/header.js';
 // import NoMatch404 from './component/NoMatch404.js';
@@ -41,8 +43,11 @@ class App extends React.Component {
         <Switch>
           <Route exact path = "/Home" component={Home} />
           <Route exact path="/form" component={Forms} />
-        </Switch>
+          <Route exact path="/Producto" component={Producto} />
+          <Route exact path="/RegistroProducto" component={RegistroProducto} />
 
+
+        </Switch>
       </div>
     )
   }

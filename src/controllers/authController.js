@@ -1,4 +1,4 @@
-const User = require('../models/User.js')
+const User = require('../models/users.js')
 
 exports.handleRegisterRes = function(req, res){
   const newUser = res.locals.newUser

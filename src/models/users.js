@@ -1,9 +1,21 @@
-const { Model } = require('objection')
+const { Model } = require('objection');
+const Password = require('../helpers/auth--objection-password.js')();
+const _validateModelFields = require('../helpers/auth--objection-validateModelFields.js')
 
-class User extends Model {
+
+
+class User extends Password(Model) {
+
   static get tableName(){
     return 'users'
   }
+
+
+  $validate(modelInstance){
+    _validateModelFields(modelInstance)
+    return modelInstance
+  }
+
 
   static get relationMappings(){
     const producto = require('./product')
@@ -20,4 +32,5 @@ class User extends Model {
     }
   }
 }
+
 module.exports = User
